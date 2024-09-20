@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hire Makeup Artist - Makeup Bliss</title>
+  
+  
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  
+  
+  
+  <style>
+    
+    body {
+      font-family: Cambria, serif;
+      background: url('https://png.pngtree.com/background/20230519/original/pngtree-all-kinds-of-beauty-products-on-a-dark-background-picture-image_2662542.jpg') no-repeat center center/cover;
+      height: 100vh;
+      color: #fff;
+    }
+    
+    
+    .form-container {
+      background-color: rgba(34, 34, 34, 0.8); 
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.7);
+      max-width: 600px;
+      margin: auto;
+    }
+    
+    
+    .form-heading {
+      font-size: 2.2rem;
+      margin-bottom: 20px;
+      text-align: center;
+      color: #d3b7e0;
+    }
+     
+
+    input[type="date"]::-webkit-calendar-picker-indicator 
+    {
+    filter: invert(1); /* Makes the calendar icon white */
+    }
+
+    
+    .form-group label {
+      font-weight: bold;
+      color: #d3b7e0;
+    }
+    .form-control {
+      background-color: #222; 
+      border: 1px solid #555;
+      color: #fff;
+      border-radius: 10px;
+    }
+    .form-control:focus {
+      border-color: #d3b7e0;
+      box-shadow: 0 0 5px rgba(211, 183, 224, 0.8);
+    }
+
+    
+    .btn-primary {
+      background-color: #d688ac;
+      border: none;
+      color: #222;
+      font-weight: bold;
+      width: 100%;
+      padding: 10px;
+      border-radius: 15px;
+    }
+    .btn-primary:hover {
+      background-color: #c59ed6;
+      color: #fff;
+    }
+    
+    
+    .form-text {
+      color: #ccc;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    
+    .hire-form-section {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <section class="hire-form-section">
+    <div class="form-container">
+      <h2 class="form-heading">Join the Makeup Bliss Team</h2>
+      <p class="form-text">We’re looking for creative and talented makeup artists to join our team. Fill out the form below to apply.</p>
+      
+      <form>
+        
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" class="form-control" id="name" placeholder="Enter your full name" required>
+        </div>
+        
+        
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+        </div>
+        
+       
+        <div class="form-group">
+          <label for="availability">Available Starting Date</label>
+          <input type="date" class="form-control" id="availability" required>
+        </div>
+        
+        
+        <div class="form-group">
+          <label for="portfolio">Portfolio Link</label>
+          <input type="url" class="form-control" id="portfolio" placeholder="Link to your work or social media" required>
+        </div>
+        
+
+        <div class="form-group">
+          <label for="about">Tell us about yourself</label>
+          <textarea class="form-control" id="about" rows="3" placeholder="Share your experience, specialties, and passion for makeup..." required></textarea>
+        </div>
+        
+        <button type="submit" class="btn btn-primary">Submit Application</button>
+      </form>
+    </div>
+  </section>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
